@@ -100,6 +100,7 @@ contract HazzieToken is StandardToken {
     }
 }
 */
+
 pragma solidity ^0.5.0;
 
 
@@ -183,11 +184,11 @@ contract HazzieToken is ERC20Base {
     
     constructor (string memory name, string memory symbol, uint8 decimals, uint256 initialSupply) public payable 
     {
-        _name = "HazzieToken";
-        _symbol = "HPT";
-        _decimals = 0;
-        _totalSupply = 1000;
-        _balances[msg.sender] = 1000;
+        _name = name;
+        _symbol = symbol;
+        _decimals = decimals;
+        _totalSupply = intialSupply;
+        _balances[msg.sender] = initialSupply;
     }
 
     function name() public view returns (string memory) 
@@ -205,3 +206,7 @@ contract HazzieToken is ERC20Base {
         return _decimals;
     }
 }
+
+//Tested using Metamask and Ropsten test Netork. Token is verified by Etherscan and can be transfered using the test network. To try for yourself
+//cut the code and copy it into Remix, complie code, change the enviroment to injected web3 change contract to browser/filename.sol in the drop down
+//change the token details(name, decimals, symbol and amount). Then deposit faucet ether into metamask, once you have eth you can then transact.
