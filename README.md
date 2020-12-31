@@ -6,6 +6,6 @@ The biggest roadblock I had was actually getting faucet ETH into the test metama
 
 I will include some screenshots below of the Verification and the Token transactions. 
 
-![Initial transaction](HazzieToken\images\InitialTransaction.png)
+![Initial transaction](images\InitialTransaction.png)
 ![Verfication](images\HazzieTokenVerification.png)
 ![transaction after verified](images\TransactionAfterVerified.png)
